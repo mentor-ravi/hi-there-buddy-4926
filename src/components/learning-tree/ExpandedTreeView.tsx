@@ -18,7 +18,7 @@ export const ExpandedTreeView = ({ domain, onBack, hideBackButton = false }: Exp
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className={hideBackButton ? "relative" : "fixed inset-0 z-50 overflow-auto"}
+      className={hideBackButton ? "relative" : "fixed inset-0 z-50 overflow-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"}
     >
       {/* Dimmed background */}
       {!hideBackButton && (
