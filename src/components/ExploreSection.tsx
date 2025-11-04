@@ -143,7 +143,7 @@ const ExploreSection = () => {
       {/* Main Explore Section */}
       <section className="py-10 bg-background relative overflow-hidden min-h-[800px]">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 px-2 sm:px-4">
             <motion.h2 initial={{
             opacity: 0,
             y: 20
@@ -153,7 +153,7 @@ const ExploreSection = () => {
           }} transition={{
             duration: 0.6,
             delay: 0.2
-          }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+          }} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
               <span className="text-primary">Seeds of Learning</span>
               <span className="text-[#14b8a6]">
 
