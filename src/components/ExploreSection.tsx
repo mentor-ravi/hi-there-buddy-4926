@@ -206,7 +206,7 @@ const ExploreSection = () => {
           </div>
 
           {/* Domain Seeds Organic Layout */}
-          <div className="relative w-full h-[450px] md:h-[650px] max-w-[320px] sm:max-w-md md:max-w-5xl lg:max-w-7xl mx-auto">
+          <div className="relative w-full h-[450px] md:h-[650px] max-w-5xl md:max-w-7xl mx-auto">
             {/* Sparkle decorations */}
             {sparkles.map((sparkle, i) => <motion.div key={`sparkle-${i}`} className="absolute text-2xl md:text-3xl z-0" style={{
             left: `${sparkle.x}%`,
