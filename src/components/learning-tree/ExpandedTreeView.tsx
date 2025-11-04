@@ -14,6 +14,7 @@ interface ExpandedTreeViewProps {
 
 export const ExpandedTreeView = ({ domain, onBack, hideBackButton = false }: ExpandedTreeViewProps) => {
   return (
+    
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

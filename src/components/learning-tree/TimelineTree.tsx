@@ -160,8 +160,8 @@ export const TimelineTree = ({
     }} className="absolute top-[280px] left-0 right-0 h-8 bg-gradient-to-b from-[hsl(142,35%,75%)] to-transparent dark:from-[hsl(142,35%,20%)] dark:to-transparent" />
 
       {/* Main vertical trunk - extends through entire content */}
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-[300px] pb-20 max-w-full overflow-x-hidden">
-        <div className="relative max-w-6xl mx-auto min-h-[3200px] overflow-x-hidden">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-[300px] pb-20 max-w-full overflow-hidden">
+        <div className="relative max-w-6xl mx-auto min-h-[3200px] overflow-hidden">
           
           {/* Central trunk line - animated growth from top to bottom */}
           <motion.div className="absolute left-1/2 -translate-x-1/2 origin-top" initial={{
