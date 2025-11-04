@@ -3,7 +3,7 @@ import { Domain } from "@/data/domains";
 import { Link } from "react-router-dom";
 import { Sparkles } from "lucide-react";
 import sproutImage from "@/assets/sprout-seed.png";
-
+import { useIsMobile } from "@/hooks/use-mobile";
 interface DomainNodeProps {
   domain: Domain;
   isSelected: boolean;
@@ -168,7 +168,7 @@ export const DomainNode = ({
 }: DomainNodeProps) => {
   const nutStyle = getNutStyle(domain.id);
   const floatDelay = Math.random() * 3;
-
+  const isMobile = useIsMobile();
   return (
     <motion.div
       onClick={onClick}
@@ -194,7 +194,7 @@ export const DomainNode = ({
         ${isHidden ? "pointer-events-none" : ""}
       `}
       style={{
-        left: `calc(${domain.position.x}% + 15%)`,
+        left: isMobile ? `calc(${domain.position.x}% - 15%)` : `calc(${domain.position.x}% + 15%)`,
         top: `${domain.position.y}%`,
         zIndex,
         willChange: "transform, opacity",
