@@ -194,7 +194,7 @@ export const DomainNode = ({
         ${isHidden ? "pointer-events-none" : ""}
       `}
       style={{
-        left: `${domain.position.x}%`,
+        left: `calc(${domain.position.x}% + 15%)`,
         top: `${domain.position.y}%`,
         zIndex,
         willChange: "transform, opacity",
