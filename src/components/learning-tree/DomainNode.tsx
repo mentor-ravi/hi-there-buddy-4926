@@ -362,7 +362,7 @@ export const DomainNode = ({
           )}
 
           {/* Sprout Image - replacing nut styling */}
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 right-0">
             <motion.div
               className="relative flex items-center justify-center"
               style={{
